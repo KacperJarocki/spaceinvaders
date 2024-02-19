@@ -23,4 +23,8 @@ class EnemySpaceShipTest {
 		enemySpaceShip.moveLeft();
 		assertEquals(49,enemySpaceShip.positionX);
 	}
+	@Test
+	void getDrawParametersShouldNotBeNull() {
+		assertNotEquals(null,enemySpaceShip.getDrawParameters());
+	}
 }

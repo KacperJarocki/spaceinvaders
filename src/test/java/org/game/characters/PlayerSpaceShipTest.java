@@ -12,18 +12,18 @@ class PlayerSpaceShipTest {
 		playerSpaceShip = new PlayerSpaceShip(100,50,50,100,"[A]");
 	}
 	@Test
-	void moveRight() {
+	void moveRightShouldChangePositionX() {
 		playerSpaceShip.moveRight();
 		assertEquals(51,playerSpaceShip.positionX);
 	}
 
 	@Test
-	void moveLeft() {
+	void moveLeftShouldChangePositionX() {
 		playerSpaceShip.moveLeft();
 		assertEquals(49,playerSpaceShip.positionX);
 	}
 	@Test
-	void draw() {
-		playerSpaceShip.draw();
+	void getDrawParametersShouldNotBeNull() {
+		assertNotEquals(null,playerSpaceShip.getDrawParameters());
 	}
 }

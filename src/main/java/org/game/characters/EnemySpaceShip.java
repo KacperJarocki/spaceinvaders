@@ -1,5 +1,6 @@
 package org.game.characters;
 
+import org.game.communication.DrawParameters;
 import org.game.interfaces.Drawable;
 import org.game.interfaces.Movable;
 
@@ -21,7 +22,9 @@ public class EnemySpaceShip extends SpaceShip implements Movable, Drawable {
 	public void moveLeft() {
 		positionX--;
 	}
+
 	@Override
-	public void draw() {
+	public DrawParameters getDrawParameters() {
+		return new DrawParameters(positionX, positionY, appearance);
 	}
 }
