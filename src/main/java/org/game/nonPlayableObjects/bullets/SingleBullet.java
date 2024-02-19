@@ -1,2 +1,4 @@
-package org.game.nonPlayableObjects.bullets;public class SingleBullet {
+package org.game.nonPlayableObjects.bullets;
+
+public class SingleBullet {
 }
