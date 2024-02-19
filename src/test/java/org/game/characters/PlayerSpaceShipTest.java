@@ -26,4 +26,9 @@ class PlayerSpaceShipTest {
 	void getDrawParametersShouldNotBeNull() {
 		assertNotEquals(null,playerSpaceShip.getDrawParameters());
 	}
+	@Test
+	void whenHitLifeShouldDecrease() {
+		playerSpaceShip.hit();
+		assertEquals(99,playerSpaceShip.life);
+	}
 }
